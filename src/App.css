@@ -1,0 +1,271 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #ffffff;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.Employee-header {
+  position: absolute;
+  width: 111px;
+  height: 22px;
+  left: 30px;
+  top: 10px;
+  font-style: normal;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 22px;
+
+}
+
+
+
+
+
+.AddEmployeeButton {
+  font-family: 'Comfortaa';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #FFFFFF;
+  border: 0.3px solid #F5F5F5;
+  background: #1D79F2;
+  border-radius: 10px;
+  position: fixed;
+  right: 70px;
+  top: 80px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+
+.AddEmployeeButton:hover {
+  background: #F2441D;
+border-radius: 10px;
+}
+
+.Employee-list {
+  position: absolute;
+  width: 1450px;
+  height: 425px;
+  left: 80px;
+  top: 157px;
+  background: #FFFFFF;
+  box-shadow: 0px 7px 29px rgba(100, 100, 111, 0.2);
+  border-radius: 10px;
+
+}
+
+/*form css*/
+
+/* .Form-container {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 40%;
+  padding: 20px;
+  background-color: #db1f1f;
+  z-index: 999;
+  overflow-y: scroll;
+} */
+
+/* form style */
+.Form-container {
+  position: absolute;
+  width: 415px;
+  height: 750px;
+  /* left: 980px; */
+  right: 0px;
+  top: 0px;
+  z-index: 999;
+
+  background: #FFFFFF;
+  box-shadow: 0px 8px 24px rgba(149, 157, 165, 0.2);
+}
+ .side-form{
+  position: absolute;
+  width: 1150px;
+  /* height: 500px; */
+  top: 0px;
+  right: 450px;
+  /* left: 0px; */
+  background-color: grey;
+  opacity: 0.6;
+  z-index: 999;
+  margin-right: auto;
+  bottom: -5px;
+ }
+
+/* form content */
+.Form-container {
+  background-color: #ffffff;
+  padding: 20px;
+  margin-bottom: 20px;
+  text-align: left;
+
+}
+.Form {
+  display: flex;
+  flex-direction: column;
+}
+
+.Form-header {
+  display: flex;
+  justify-content: space-between;
+  font-family: 'Comfortaa';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 22px;
+  color: #0B0D26;
+  
+
+}
+
+/* form id */
+
+#name,
+#surname,
+#phone,
+#email,
+#nationalId,
+#department,
+#dob
+ {
+  display: flex;
+  box-sizing: border-box;
+  width: 374px;
+  height: 32px;
+  left: 992px;
+  top: 74px; 
+  background: #FFFFFF;
+  border: 1px solid #CCCCCC;
+  border-radius: 2px;
+  margin-bottom: 30px;
+  
+}
+
+/* Form footer */
+
+.Form-footer {
+  padding: 50px 70px;
+}
+
+/* footer buttons */
+
+.Close-button {
+  background: #CCCCCC;
+  border-radius: 10px;
+  color: #0B0D26;
+  border-color: #CCCCCC;
+  width: 90px;
+  height: 30px;
+  margin-right: 10px;
+  font-family: 'Times New Roman', Times, serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  /* display: flex; */
+   align-items: center; 
+   text-align: center; 
+}
+
+/* hover color /cancel button*/
+.Close-button:hover {
+  background: #F2441D;
+border-radius: 10px;
+}
+
+.Submit-button {
+  background: #1D79F2;;
+  border-radius: 10px;
+  color: #f0f0f5;
+  border-color: #1D79F2;
+  width: 100px;
+  height: 30px;
+  margin-left: 50px;
+  font-family: 'Times New Roman', Times, serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  /* display: flex; */
+   align-items: center; 
+   text-align: center; 
+}
+
+
+#submit:enabled {
+  background: #1D79F2;
+}
+
+
+
+
+/* employee card */
+
+
+.EmployeeList p {
+  position: absolute;
+  bottom: 10%;
+ left: 50%;
+  transform: translateX(-50%);
+  margin: 0;
+
+  font-family: 'Comfortaa';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+padding-top: 200px;
+}
+
+
+
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
